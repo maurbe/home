@@ -1,6 +1,7 @@
 /* global */
 @import url('https://fonts.googleapis.com/css?family=Calibri');
 
+
 .grid-2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -12,7 +13,6 @@ body{
     font-family: 'Calibri', sans-serif;
     background-color: #fffff;
     color: #000000;
-
 }
 
 h2,.white{
@@ -23,6 +23,7 @@ a{
     color: #000000;
     text-decoration: none;
 }
+
 /* section 1 */
 .section-1{
     padding-top: 20vh;
@@ -48,27 +49,25 @@ a{
 .section-2{
     padding-top: 10vh;
     width: 80%;
+    text-align: justify;
 }
 
 .section-2 h2{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
 }
 
 .section-2 p{
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     padding-bottom: 10px;
     margin:0;
 }
 
 .section-2 a{
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem;
-    padding-left: 0;
-    width: 100px;
+    font-size: 1.0rem;
 }
 /* animations / utilities */
+/*
 .section-2 a:hover{
     font-size: 1.3rem;
     color: #000000;
@@ -86,6 +85,7 @@ a{
     position: relative;
     padding-left: 10px;
 }
+*/
 
 /* media queres */
 @media(max-width:780px){
@@ -102,3 +102,27 @@ a{
         padding-top: 2rem;
     }
 }
+
+.card-container {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  justify-content: space-between; /* Distribute space between cards */
+  flex-wrap: wrap; /* Wrap cards to the next line if the container is too narrow */
+}
+
+.card {
+  /* Card styles as you defined */
+  background-size: cover;
+  transition: 0.3s;
+  height: 100px;
+  width: calc(30% - 20px); /* Adjust card width and add some margin between cards */
+  margin: 10px; /* Margin to separate cards */
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.3);
+}
+
+
+
